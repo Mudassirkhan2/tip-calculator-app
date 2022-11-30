@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip-calculator-app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+
+<body>
+    <img src="images/logo.svg" alt="logo" class="logo">
+    <main>
+        <div class="main-container">
+            <div class="bill-container">
+                <p>
+
+                    Bill
+                </p>
+                <div class="input-icons">
+                    <i class="fa fa-inr icon"></i>
+                    <input type="text" name="bill" id="bill" class="input-field" placeholder="0" maxlength="7">
+                </div>
+                <p>Select Tip %</p>
+                <div class="percentage-container">
+                    <button class="percentage-counter" id="5perc">5%</button>
+                    <button class="percentage-counter" id="10perc">10%</button>
+                    <button class="percentage-counter" id="15perc">15%</button>
+                    <button class="percentage-counter" id="25perc">25%</button>
+                    <button class="percentage-counter" id="50perc">50%</button>
+                    <input class="percentage-counter" id="custom" size="4" placeholder="Custom" maxlength="2"></input>
+                </div>
+
+                <p>Number of people</p>
+                <div class="input-icons">
+                    <span class="zeroIn">cant be zero</span>
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" name="numberofpeople" id="numberofpeople" class="input-field" placeholder="0" maxlength="7">
+                </div>
+            </div>
+
+
+            <!--      total-container  -->
+            <div class="total-container">
+                <div class="tipamount">
+                    <div class="totalflex">
+                        <div class="amountflex">
+                            <p class="para">Tip Amount</p>
+                            <p>/ person</p>
+                        </div>
+                        <div class="tipamountinr"><i class="fa fa-inr icon"></i><span class="tipamountperperson">0.00</span>
+                            </div>
+                    </div>
+                    <div class="totalflex">
+                        <div class="amountflex">
+                            <p class="para">Total</p>
+                            <p>/ person</p>
+                        </div>
+                        <div class="tipamountinr"><i class="fa fa-inr icon"></i><span class="amounttotal">0.00</span>    
+                        </div>
+                    </div>
+                    
+                    <div class="btn">
+                        <button class="reset">RESET</button>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
